@@ -74,4 +74,8 @@ Rails.application.configure do
   # config.active_job.queue_adapter = :resque
   # config.active_job.queue_name_prefix = Rails.env
   # config.active_job.queue_name_delimiter = "."
+
+  # Allow non localhost connections in development mode
+  config.web_console.whiny_requests = false
+  
 end
