@@ -25,6 +25,7 @@ class DmproadmapConfig < Anyway::Config
               :csv_separators,
 
               :database_adapter,
+              :database_encoding,
               :database_name,
               :database_pool_size,
               :database_host,
