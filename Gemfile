@@ -86,7 +86,7 @@ gem "mysql2", group: :mysql, require: false
 
 # Pg is the Ruby interface to the {PostgreSQL
 # RDBMS}[http://www.postgresql.org/](https://bitbucket.org/ged/ruby-pg)
-gem "pg", group: :pgsql, require: false
+gem "pg", group: :pgsql, require: true
 
 # Bit fields for ActiveRecord (https://github.com/pboling/flag_shih_tzu)
 gem "flag_shih_tzu" # , "~> 0.3.23"
@@ -243,6 +243,8 @@ gem "httparty"
 
 # Autoload dotenv in Rails. (https://github.com/bkeepers/dotenv)
 gem "dotenv-rails"
+
+gem "rails-i18n"
 
 # A library that retrieves an citation for the specified DOI.
 # https://github.com/CDLUC3/uc3-citation
