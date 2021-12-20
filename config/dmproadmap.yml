@@ -63,12 +63,13 @@ default: &default
   # ==========================
 
   # See https://guides.rubyonrails.org/v5.0/configuring.html#configuring-a-database
-  database_adapter: "mysql2"
-  database_name: "dmp"
-  database_host: "localhost"
+  database_adapter: "postgresql"
+  database_encoding: "unicode"
+  database_name: "postgres"
+  database_host: "db"
   database_pool_size: 16
-  database_username: "root"
-  database_password:
+  database_username: "postgres"
+  database_password: "password"
 
   # =========================
   # = Locales configuration =
@@ -132,8 +133,8 @@ default: &default
   # ORCID provides identifiers for people.
   # See the public api docs https://info.orcid.org/documentation/features/public-api/
   # Or the member api docs https://info.orcid.org/documentation/features/member-api/
-  orcid_client_id:
-  orcid_client_secret:
+  orcid_client_id: "test"
+  orcid_client_secret: "test"
   orcid_sandbox: true
   orcid_api_base_url: "https://api.sandbox.orcid.org/v3.0/"
   orcid_landing_page_url: "https://sandbox.orcid.org/"
