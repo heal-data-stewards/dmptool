@@ -9,11 +9,12 @@ services:
   web:
     build: .
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
-    volumes:
-      - ./config/credentials.yml.enc:/roadmap/config/credentials.yml.enc:ro
+    # volumes:
+      # - ./config/credentials.yml.enc:/roadmap/config/credentials.yml.enc:ro
     ports:
       - "3000:3000"
     depends_on:
       - db
     environment:
       - NODE_OPTIONS=--openssl-legacy-provider
+      - secret_key_base="mysecretkeybasekey"
